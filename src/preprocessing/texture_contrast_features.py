@@ -1,16 +1,15 @@
 """
-Author: [Your Name]
-Email: [Your Email]
-Date: [Creation Date]
+Author: Luis Miguel Gómez Meneses
+Email: luisgomez251811@correo.itm.edu.co
+Date: 12/06/2024
 Version: 1.0
 
 Description:
 This file contains functions to calculate texture and contrast features using Grey Level Co-occurrence Matrix (GLCM) and other related methods.
 
 Dependencies:
-- numpy (version 1.25.2)
 - cv2 (version 4.8.0)
-- skimage (version x.x.x)  # Update with the correct version
+- skimage (version: 0.19.3)
 
 Usage:
 Example of how to use the functions in this file:
@@ -18,9 +17,6 @@ Example of how to use the functions in this file:
 >>> from texture_features import calculate_texture_contrast_features
 >>> image = cv2.imread('path/to/image.jpeg')
 >>> texture, contrast = calculate_texture_contrast_features(image)
-
-License:
-[License Name]
 
 Additional Information:
 - Make sure to have the dependencies installed before running the code.
