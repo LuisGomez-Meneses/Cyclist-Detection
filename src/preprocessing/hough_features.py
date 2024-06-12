@@ -1,16 +1,16 @@
 """
-Author: [Your Name]
-Email: [Your Email]
-Date: [Creation Date]
+Author: Luis Miguel Gómez Meneses
+Email: luisgomez251811@correo.itm.edu.co
+Date: 12/06/2024
 Version: 1.0
 
 Description:
 This file contains functions to calculate features using the Hough Transform.
 
 Dependencies:
-- numpy (version x.x.x)
-- cv2 (version x.x.x)
-- skimage (version x.x.x)
+- numpy (version: 1.25.2)
+- cv2 (version: 4.8.0)
+- skimage (version: 0.19.3)
 
 Usage:
 Example of how to use the functions in this file:
