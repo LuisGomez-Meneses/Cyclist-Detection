@@ -31,61 +31,62 @@ data/
 ├── raw/
 
 │ ├── NocturnosJPEG/
-| | |
+
 │ │ ├── Nocturnos (1).jpeg
-| | |
+
 │ │ ├── Nocturnos (2).jpeg
-| | | 
+
 │ │ ├── .
-| | |
+
 │ │ ├── .
+
 │ │ ├── Nocturnos (19).jpeg
-| | |
+
 │ │ └── txt/
-| | |
+
 │ │ ├── Nocturnos (1).txt
-| | |
+
 │ │ ├── Nocturnos (2).txt
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── Nocturnos (19).txt
-| | |
+
 │ ├── SimplesJPEG/
-| | |
+
 │ │ ├── Simples (1).jpeg
-| | |
+
 │ │ ├── Simples (2).jpeg
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── Simples (19).jpeg
-| | |
+
 │ │ └── txt/
-| | |
+
 │ │ ├── Simples (1).txt
-| | |
+
 │ │ ├── Simples (2).txt
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── .
-| | |
+
 │ │ ├── Simples (19).txt
-| | |
+
 │
 ├── weights/
-| | 
+ 
 │ ├── part_1.pth
-| | 
+
 │ ├── part_2.pth
-| | 
+ 
 │ ├── part_3.pth
-| | 
+
 │
 └── README.md
 
