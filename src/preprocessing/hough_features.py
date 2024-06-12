@@ -32,6 +32,15 @@ import cv2
 from skimage.transform import hough_line, hough_line_peaks
 
 def calculate_hough_features(image):
+    """
+    Calculate average angle and distance features of an image using Hough Transform.
+
+    Parameters:
+    image (numpy.ndarray): Input image in BGR format.
+
+    Returns:
+    tuple: A tuple containing the average angle and average distance.
+    """
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     edges = cv2.Canny(gray, 50, 150, apertureSize=3)
     h, theta, d = hough_line(edges)
