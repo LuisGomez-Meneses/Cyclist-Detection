@@ -1,11 +1,10 @@
 # data
+
 This section of the repository contains all the data files and scripts related to the cyclist detection project.
 
 ## Table of Contents
 - [File Description](#file-description)
 - [Folder Structure](#folder-structure)
-- [Usage Instructions](#usage-instructions)
-- [Requirements](#requirements)
 - [Contact](#contact)
 
 ## File Description
@@ -17,8 +16,16 @@ This section details the files and folders present in the `data` directory.
     - `txt/`: `.txt` files corresponding to each image, representing cyclist detections in YOLO format.
   - `simplesjpeg/`: Contains images of cyclists taken during the day.
     - `txt/`: `.txt` files corresponding to each image, representing cyclist detections in YOLO format.
-- `weights/`: Contains the YOLO NAS weight files for cyclist detection.
-  - `part_1.pth`, `part_2.pth`, `part_3.pth`: The original weight file `.pth` split into three parts due to GitHub's file size restrictions.
+- `processed/`: Contains processed data files.
+  - `cyclist_detection_data.csv`: The database composed of the Hough Transform descriptors `avg_angle` and `avg_distance`, as well as texture descriptors. These are the input data. The outputs are the YOLO detection data `cx`, `cy`, `w`, `h`, obtained by manually labeling the images using the ImageLabeling tool in YOLO format.
+  - `cyclist_detection_Normalized_data.csv`: The database with normalized feature values.
+  - `example_labeling.png`: An example image showing manual labeling.
+
+### Example of Manual Labeling
+
+Here is an example of manual labeling using the ImageLabeling tool in YOLO format:
+
+![Example of Manual Labeling](processed/example_labeling.png)
 
 ## Folder Structure
 
@@ -27,7 +34,7 @@ The folder structure of the data section is as follows:
 data/
 │
 ├── raw/
-│ ├── NocturnosJPEG/
+│ ├── nocturnosjpeg/
 │ │ ├── Nocturnos (1).jpeg
 │ │ ├── Nocturnos (2).jpeg
 │ │ ├── .
@@ -39,7 +46,7 @@ data/
 │ │ ├── .
 │ │ ├── .
 │ │ ├── Nocturnos (19).txt
-│ ├── SimplesJPEG/
+│ ├── simplesjpeg/
 │ │ ├── Simples (1).jpeg
 │ │ ├── Simples (2).jpeg
 │ │ ├── .
@@ -51,46 +58,11 @@ data/
 │ │ ├── .
 │ │ ├── .
 │ │ ├── Simples (19).txt
-├── weights/
-│ ├── part_1.pth
-│ ├── part_2.pth
-│ ├── part_3.pth
+├── processed/
+│ ├── cyclist_detection_data.csv
+│ ├── cyclist_detection_Normalized_data.csv
+│ ├── example_labeling.png
 └── README.md
-```
-
-
-## Usage Instructions
-
-To use the data and scripts in this section, follow these steps:
-
-1. Download and combine the YOLO NAS weight files:
-
-    ```bash
-    cat weights/part_1.pth weights/part_2.pth weights/part_3.pth > weights/yolo_weights.pth
-    ```
-
-2. Use the image and annotation files to train your YOLO NAS model with cyclist detections both during the day and at night.
-
-## Requirements
-
-Ensure you have the following dependencies installed:
-
-- Python 3.x
-- PyTorch
-- SuperGradients 3.1.3
-- PyParsing 2.4.7
-- Roboflow
-- Ultralytics
-
-You can install the necessary dependencies with:
-
-```bash
-
-pip install super_gradients==3.1.3
-pip uninstall pyparsing
-pip install pyparsing==2.4.7
-pip install -q roboflow
-pip install ultralytics
 ```
 
 ## Contact
