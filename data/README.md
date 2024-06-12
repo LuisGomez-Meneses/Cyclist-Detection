@@ -31,36 +31,20 @@ data/
 │ ├── NocturnosJPEG/
 │ │ ├── Nocturnos (1).jpeg
 │ │ ├── Nocturnos (2).jpeg
-│ │ ├── .
-│ │ ├── .
-│ │ ├── .
-│ │ ├── Nocturnos (n).jpeg
 │ │ └── txt/
 │ │ ├── Nocturnos (1).txt
 │ │ ├── Nocturnos (2).txt
-│ │ ├── .
-│ │ ├── .
-│ │ ├── .
-│ │ ├── Nocturnos (n).txt
 │ ├── SimplesJPEG/
 │ │ ├── Simples (1).jpeg
 │ │ ├── Simples (2).jpeg
-│ │ ├── .
-│ │ ├── .
-│ │ ├── .
-│ │ ├── Simples (n).jpeg
 │ │ └── txt/
 │ │ ├── Simples (1).txt
 │ │ ├── Simples (2).txt
-│ │ ├── .
-│ │ ├── .
-│ │ ├── .
-│ │ ├── Simples (n).txt
 │
 ├── weights/
 │ ├── part_1.pth
 │ ├── part_2.pth
-│ └── part_3.pth
+│ ├── part_3.pth
 │
 └── README.md
 
