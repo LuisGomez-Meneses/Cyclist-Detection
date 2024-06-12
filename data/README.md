@@ -85,7 +85,7 @@ data/
 
 │ ├── part_2.pth
  
-│ ├── part_3.pth
+│ ├── part_3.pth.
 |
 └── README.md
 
