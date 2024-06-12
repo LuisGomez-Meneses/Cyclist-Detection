@@ -6,7 +6,6 @@ This section of the repository contains all the data files and scripts related t
 - [Folder Structure](#folder-structure)
 - [Usage Instructions](#usage-instructions)
 - [Requirements](#requirements)
-- [Contributing](#contributing)
 - [Contact](#contact)
 
 ## File Description
@@ -92,4 +91,9 @@ pip uninstall pyparsing
 pip install pyparsing==2.4.7
 pip install -q roboflow
 pip install ultralytics
+'''
 
+## Contact
+   ```bash
+   email:luismiguelgomez0821@gmail.com
+   '''
