@@ -15,7 +15,7 @@ Usage:
 Example of how to use the function in this file:
 >>> import pandas as pd
 >>> path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
->>> from your_script_name import describe
+>>> from describe import describe
 >>> df = describe(path)
 >>> print(df)
 
