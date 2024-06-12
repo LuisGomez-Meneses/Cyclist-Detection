@@ -26,10 +26,14 @@ This section details the files and folders present in the `data` directory.
 The folder structure of the data section is as follows:
 
 data/
+
 │
 ├── raw/
+
 │ ├── NocturnosJPEG/
+
 │ │ ├── Nocturnos (1).jpeg
+
 │ │ ├── Nocturnos (2).jpeg
 
 
