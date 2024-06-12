@@ -39,7 +39,7 @@ sys.path.append('Cyclist-Detection/src/preprocessing')
 
 from hough_features import calculate_hough_features
 from texture_contrast_features import calculate_texture_contrast_features
-
+from normalize_features import normalize_features
 # Define the base path for raw data
 base_path = "Cyclist-Detection/data/raw"
 data = []
@@ -81,5 +81,6 @@ for folder in folders:
 df = pd.DataFrame(data)
 print(df)
 # Uncomment to save dataframe as a .csv file
-# df.to_csv('Cyclist-Detection/data/processed/cyclist_detection_data.csv', index=False)
+df.to_csv('Cyclist-Detection/data/processed/cyclist_detection_data.csv', index=False)
+normalize_features('Cyclist-Detection/data/processed/cyclist_detection_data.csv')
 
