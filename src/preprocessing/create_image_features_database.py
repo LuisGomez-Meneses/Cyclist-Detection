@@ -81,5 +81,5 @@ for folder in folders:
 df = pd.DataFrame(data)
 print(df)
 # Uncomment to save dataframe as a .csv file
-# df.to_csv('cyclist_detection_data.csv', index=False)
+# df.to_csv('Cyclist-Detection/data/processed/cyclist_detection_data.csv', index=False)
 
