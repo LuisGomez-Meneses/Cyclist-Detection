@@ -16,9 +16,9 @@ Usage:
 Example of how to use the function in this file:
 >>> import pandas as pd
 >>> import matplotlib.pyplot as plt
->>> path = '/content/Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
+>>> path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
 >>> df = pd.read_csv(path)
->>> from your_script_name import scatter_plots_feature_vs_centroid_x
+>>> from scatter_plots_feature_vs_centroid_x import scatter_plots_feature_vs_centroid_x
 >>> scatter_plots_feature_vs_centroid_x(df)
 
 Additional Information:
@@ -28,7 +28,7 @@ Additional Information:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-path = '/content/Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
+path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
 df = pd.read_csv(path)
 selected_columns = ['avg_angle', 'avg_distance', 'texture', 'contrast']
 
