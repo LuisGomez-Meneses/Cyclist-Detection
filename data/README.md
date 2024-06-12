@@ -91,9 +91,9 @@ pip uninstall pyparsing
 pip install pyparsing==2.4.7
 pip install -q roboflow
 pip install ultralytics
-'''
+```
 
 ## Contact
    ```bash
    email:luismiguelgomez0821@gmail.com
-   '''
+   ```
