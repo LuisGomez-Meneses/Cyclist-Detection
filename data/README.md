@@ -10,7 +10,8 @@ This section of the repository contains all the data files and scripts related t
 ## File Description
 
 This section details the files and folders present in the `data` directory.
-
+- `image/`: representative images of a process carried out, NOT of results
+  - `example_labeling.PNG`: An example image showing manual labeling.
 - `raw/`: Contains raw images obtained through web scraping techniques and from the COCO and KITTY databases.
   - `nocturnosjpeg/`: Contains images of cyclists taken at night.
     - `txt/`: `.txt` files corresponding to each image, representing cyclist detections in YOLO format.
@@ -19,13 +20,12 @@ This section details the files and folders present in the `data` directory.
 - `processed/`: Contains processed data files.
   - `cyclist_detection_data.csv`: The database composed of the Hough Transform descriptors `avg_angle` and `avg_distance`, as well as texture descriptors. These are the input data. The outputs are the YOLO detection data `cx`, `cy`, `w`, `h`, obtained by manually labeling the images using the ImageLabeling tool in YOLO format.
   - `cyclist_detection_Normalized_data.csv`: The database with normalized feature values.
-  - `example_labeling.png`: An example image showing manual labeling.
 
 ### Example of Manual Labeling
 
 Here is an example of manual labeling using the ImageLabeling tool in YOLO format:
 
-![Example of Manual Labeling](processed/example_labeling.png)
+![Example of Manual Labeling](image/example_labeling.PNG)
 
 ## Folder Structure
 
@@ -34,6 +34,8 @@ The folder structure of the data section is as follows:
 data/
 │
 ├── raw/
+│ ├── image/
+│ ├── example_labeling.PNG
 │ ├── nocturnosjpeg/
 │ │ ├── Nocturnos (1).jpeg
 │ │ ├── Nocturnos (2).jpeg
@@ -61,7 +63,6 @@ data/
 ├── processed/
 │ ├── cyclist_detection_data.csv
 │ ├── cyclist_detection_Normalized_data.csv
-│ ├── example_labeling.png
 └── README.md
 ```
 
