@@ -19,8 +19,6 @@ Example of how to use the functions in this file:
 >>> image = cv2.imread('path/to/image.jpeg')
 >>> avg_angle, avg_dist = calculate_hough_features(image)
 
-License:
-[License Name]
 
 Additional Information:
 - Make sure to have the dependencies installed before running the code.
