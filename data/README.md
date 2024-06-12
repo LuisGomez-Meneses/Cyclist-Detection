@@ -1,4 +1,4 @@
-# Cyclist-Detection
+# data
 This section of the repository contains all the data files and scripts related to the cyclist detection project.
 
 ## Table of Contents
