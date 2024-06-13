@@ -24,7 +24,7 @@ Additional Information:
 """
 
 import cv2
-from skimage.feature import greycomatrix, greycoprops
+from skimage.feature import graycomatrix, graycoprops
 
 def calculate_texture_contrast_features(image):
     """
@@ -37,7 +37,7 @@ def calculate_texture_contrast_features(image):
     tuple: A tuple containing texture and contrast values.
     """
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    glcm = greycomatrix(gray, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
-    contrast = greycoprops(glcm, 'contrast')[0][0]
-    texture = greycoprops(glcm, 'dissimilarity')[0][0]
+    glcm = graycomatrix(gray, distances=[1], angles=[0], levels=256, symmetric=True, normed=True)
+    contrast = graycoprops(glcm, 'contrast')[0][0]
+    texture = graycoprops(glcm, 'dissimilarity')[0][0]
     return texture, contrast
