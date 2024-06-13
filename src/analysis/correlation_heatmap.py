@@ -9,7 +9,7 @@ This script reads a CSV file, calculates the correlation between input features 
 
 Dependencies:
 - pandas (version 2.0.3)  # Update with the correct version
-- seaborn (version 0.11.2)  # Update with the correct version
+- seaborn (version 0.13.1)  # Update with the correct version
 - matplotlib (version 3.4.2)  # Update with the correct version
 - Python (version  3.10.12)  # Update with the correct version
 
