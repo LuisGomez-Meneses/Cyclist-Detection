@@ -28,7 +28,7 @@ Additional Information:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
+path = 'data/processed/cyclist_detection_Normalized_data.csv'
 df = pd.read_csv(path)
 
 def hexbin_plots(df):
