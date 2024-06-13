@@ -38,14 +38,14 @@ path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
 df = pd.read_csv(path)
 
 # Add paths to custom modules
-sys.path.append('/content/Cyclist-Detection/src/visualization')
-sys.path.append('/content/Cyclist-Detection/src/preprocessing')
-sys.path.append('/content/Cyclist-Detection/src/analysis/statistical description of data')
-sys.path.append('/content/Cyclist-Detection/src/analysis/separability of data/correlation_heatmap')
-sys.path.append('/content/Cyclist-Detection/src/analysis/feature vs centroid_x')
-sys.path.append('/content/Cyclist-Detection/src/analysis/feature vs centroid_y')
-sys.path.append('/content/Cyclist-Detection/src/analysis/feature vs width')
-sys.path.append('/content/Cyclist-Detection/src/analysis/feature vs height')
+sys.path.append('Cyclist-Detection/src/visualization')
+sys.path.append('Cyclist-Detection/src/preprocessing')
+sys.path.append('Cyclist-Detection/src/analysis/statistical description of data')
+sys.path.append('Cyclist-Detection/src/analysis/separability of data/correlation_heatmap')
+sys.path.append('Cyclist-Detection/src/analysis/feature vs centroid_x')
+sys.path.append('Cyclist-Detection/src/analysis/feature vs centroid_y')
+sys.path.append('Cyclist-Detection/src/analysis/feature vs width')
+sys.path.append('Cyclist-Detection/src/analysis/feature vs height')
 
 # Import custom functions
 from kde_plot_input_features import kde_plot_input_features
