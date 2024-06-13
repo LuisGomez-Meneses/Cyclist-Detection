@@ -31,7 +31,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
+path = 'data/processed/cyclist_detection_Normalized_data.csv'
 df = pd.read_csv(path)
 
 def kde_plot_input_features(df):
