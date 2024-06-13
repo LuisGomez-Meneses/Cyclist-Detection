@@ -91,6 +91,6 @@ You can install the dependencies by running:
 ```bash
 pip install -r requirements.txt
 ```
-Execute to run the entire project with test.py
+Execute test.py to run the entire project
 
 
