@@ -39,4 +39,4 @@ def normalize_features(csv_path):
         df[feature] = (df[feature] - df[feature].mean()) / df[feature].std()
     print(df.head())
     # Uncomment to save dataframe as a .csv file
-    df.to_csv('Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv', index=False)
+    df.to_csv('data/processed/cyclist_detection_Normalized_data.csv', index=False)
