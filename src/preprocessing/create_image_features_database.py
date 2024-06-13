@@ -35,13 +35,13 @@ import pandas as pd
 import sys
 
 # Ensure the path to the custom modules is added
-sys.path.append('Cyclist-Detection/src/preprocessing')
+sys.path.append('src/preprocessing')
 
 from hough_features import calculate_hough_features
 from texture_contrast_features import calculate_texture_contrast_features
 from normalize_features import normalize_features
 # Define the base path for raw data
-base_path = "Cyclist-Detection/data/raw"
+base_path = "data/raw"
 data = []
 
 # Iterate through each folder in the base path
@@ -81,6 +81,6 @@ for folder in folders:
 df = pd.DataFrame(data)
 print(df)
 # Uncomment to save dataframe as a .csv file
-df.to_csv('Cyclist-Detection/data/processed/cyclist_detection_data.csv', index=False)
-normalize_features('Cyclist-Detection/data/processed/cyclist_detection_data.csv')
+df.to_csv('data/processed/cyclist_detection_data.csv', index=False)
+normalize_features('data/processed/cyclist_detection_data.csv')
 
