@@ -4,6 +4,8 @@ This section of the repository contains all the data files and scripts related t
 
 ## Table of Contents
 - [File Description](#file-description)
+- [Example of Manual Labeling](#Example-of-Manual-Labeling)
+- [Database with which one work](#Database-with-which-one-work)
 - [Folder Structure](#folder-structure)
 - [Contact](#contact)
 
@@ -26,6 +28,12 @@ This section details the files and folders present in the `data` directory.
 Here is an example of manual labeling using the ImageLabeling tool in YOLO format:
 
 ![Example of Manual Labeling](image/example_labeling.PNG)
+
+## Database with which one work
+The position of the cyclist within the image will not be estimated using unstructured data from the images, but rather by applying structured data represented by mathematical descriptors of the image. We will apply the Hough transform, texture descriptors, and contrast descriptors.
+input: avg_angle,avg_distance,texture,contrast
+output:centroid_x,centroid_y,width,height
+![Database with which one work](image/example_data.PNG)
 
 ## Folder Structure
 
