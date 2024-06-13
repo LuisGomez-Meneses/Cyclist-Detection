@@ -19,14 +19,13 @@ Dependencies:
 Usage:
 Run this script to see an example of data preprocessing, analysis, and visualization.
 """
-
 import os
 import cv2
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from skimage.feature import greycomatrix, greycoprops
+from skimage.feature import graycomatrix, graycoprops
 from skimage.transform import hough_line, hough_line_peaks
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -34,33 +33,39 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 import sys
 
 # Load the dataset
-path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
+path = 'data/processed/cyclist_detection_Normalized_data.csv'
 df = pd.read_csv(path)
 
 # Add paths to custom modules
-sys.path.append('Cyclist-Detection/src/visualization')
-sys.path.append('Cyclist-Detection/src/preprocessing')
-sys.path.append('Cyclist-Detection/src/analysis/statistical description of data')
-sys.path.append('Cyclist-Detection/src/analysis/separability of data/correlation_heatmap')
-sys.path.append('Cyclist-Detection/src/analysis/feature vs centroid_x')
-sys.path.append('Cyclist-Detection/src/analysis/feature vs centroid_y')
-sys.path.append('Cyclist-Detection/src/analysis/feature vs width')
-sys.path.append('Cyclist-Detection/src/analysis/feature vs height')
+sys.path.append('src/visualization')
+from kde_plot_input_features import kde_plot_input_features
+sys.path.append('src/preprocessing')
+sys.path.append('src/analysis/statistical description of data')
+sys.path.append('src/analysis/separability of data/correlation_heatmap')
+sys.path.append('src/analysis/separability of data/scatter plot')
 
 # Import custom functions
-from kde_plot_input_features import kde_plot_input_features
 from hough_features import calculate_hough_features
+print(help(calculate_hough_features))
 from texture_contrast_features import calculate_texture_contrast_features
+print(help(calculate_texture_contrast_features))
 from normalize_features import normalize_features
-from statistical_description_of_data import statistical_description_of_data
+print(help(normalize_features))
+from describe import describe
+print(help(describe))
 from correlation_heatmap import correlation_heatmap
+print(help(correlation_heatmap))
 from scatter_plots_feature_vs_centroid_x import scatter_plots_feature_vs_centroid_x
+print(help(scatter_plots_feature_vs_centroid_x))
 from scatter_plots_feature_vs_centroid_y import scatter_plots_feature_vs_centroid_y
+print(help(scatter_plots_feature_vs_centroid_y))
 from scatter_plots_feature_vs_width import scatter_plots_feature_vs_width
+print(help(scatter_plots_feature_vs_width))
 from scatter_plots_feature_vs_height import scatter_plots_feature_vs_height
+print(help(scatter_plots_feature_vs_height))
 
 # Define the base path for raw data
-base_path = "Cyclist-Detection/data/raw"
+base_path = "data/raw"
 data = []
 
 # Iterate through each folder in the base path
@@ -101,19 +106,19 @@ df = pd.DataFrame(data)
 print(df)
 
 # Normalize features and update DataFrame
-df2 = normalize_features('Cyclist-Detection/data/processed/cyclist_detection_data.csv')
-
+df2 = normalize_features('data/processed/cyclist_detection_data.csv')
+path = 'data/processed/cyclist_detection_Normalized_data.csv'
 # Perform statistical description of data
-statistical_description_of_data(df2)
+describe(path)
 
 # Generate correlation heatmap
-correlation_heatmap(df2)
+# correlation_heatmap(df2)
 
-# Generate scatter plots for different features
-scatter_plots_feature_vs_centroid_x(df2)
-scatter_plots_feature_vs_centroid_y(df2)
-scatter_plots_feature_vs_width(df2)
-scatter_plots_feature_vs_height(df2)
+# # Generate scatter plots for different features
+# scatter_plots_feature_vs_centroid_x(df2)
+# scatter_plots_feature_vs_centroid_y(df2)
+# scatter_plots_feature_vs_width(df2)
+# scatter_plots_feature_vs_height(df2)
 
 # Select input features and output labels
 input_features = ['avg_angle', 'avg_distance', 'texture', 'contrast']
