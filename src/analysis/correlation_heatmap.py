@@ -20,7 +20,7 @@ Example of how to use the function in this file:
 >>> import matplotlib.pyplot as plt
 >>> path = 'Cyclist-Detection/data/processed/cyclist_detection_Normalized_data.csv'
 >>> df = pd.read_csv(path)
->>> from your_script_name import correlation_heatmap
+>>> from correlation_heatmap import correlation_heatmap
 >>> correlation_heatmap(df)
 
 Additional Information:
